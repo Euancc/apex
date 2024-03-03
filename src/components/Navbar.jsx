@@ -11,7 +11,9 @@ function Navbar() {
   return (
     <BrowserRouter>
       <nav className="navbar">
-        <div className="nav-logo">Apex</div>
+        <div className="nav-logo" onClick={closeMobileMenu}>
+          Apex
+        </div>
 
         <div className="menu-icon" onClick={handleClick}>
           <img src={click ? 'close.png' : 'hamburger.png'} />
@@ -19,22 +21,22 @@ function Navbar() {
 
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <Link to="about" className="nav-link">
+            <Link to="about" className="nav-link" onClick={closeMobileMenu}>
               About
             </Link>
           </li>
           <li>
-            <Link to="services" className="nav-link">
+            <Link to="services" className="nav-link" onClick={closeMobileMenu}>
               Services
             </Link>
           </li>
           <li>
-            <Link to="gallery" className="nav-link">
+            <Link to="gallery" className="nav-link" onClick={closeMobileMenu}>
               Gallery
             </Link>
           </li>
           <li>
-            <Link to="contact" className="nav-link">
+            <Link to="contact" className="nav-link" onClick={closeMobileMenu}>
               Contact
             </Link>
           </li>
