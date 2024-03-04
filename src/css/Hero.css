@@ -1,21 +1,29 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('apex-hero.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(
-    100vh - 60px
-  ); /* Sets the height of the hero section to be equal to the viewport height minus 60 pixels */
-  font-size: 20px;
-  line-height: 1.5;
+  height: calc(100vh - 60px);
+
   bottom: 60px;
 }
 h1 {
-  display: flex;
-  justify-content: center;
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-
+  word-wrap: break-word;
+  white-space: normal;
   color: rgba(240, 255, 255, 0.81);
+  margin-top: -60px;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 2rem;
+    word-wrap: break-word;
+    white-space: normal;
+  }
 }
