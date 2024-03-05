@@ -1,4 +1,33 @@
 .about-container {
-  display: flex;
-  margin: 100px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 50px 130px 100px 130px;
+}
+
+.about-container h1 {
+  display: block;
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  word-wrap: break-word;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.about-p {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+@media screen and (max-width: 960px) {
+  .about-container {
+    margin: 20px;
+  }
+
+  .about-p {
+    margin: 0;
+  }
 }
