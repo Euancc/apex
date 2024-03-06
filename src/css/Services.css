@@ -1,0 +1,8 @@
+.services-container {
+  display: block;
+  justify-content: center;
+  background-color: rgb(255, 248, 243);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+}

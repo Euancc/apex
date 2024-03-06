@@ -1,7 +1,12 @@
 import React from 'react'
+import '../css/Services.css'
 
 function Services() {
-  return <div id="services">Services</div>
+  return (
+    <div className="services-container" id="services">
+      Services
+    </div>
+  )
 }
 
 export default Services
